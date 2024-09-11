@@ -17,7 +17,7 @@
 		<java.version>11</java.version>
 		<sonar.organization>r0mainp</sonar.organization>
 		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
-    	<sonar.projectBaseDir>.</sonar.projectBaseDir>
+    	<sonar.projectName>BobApp Backend</sonar.projectName>
 	</properties>
 	<dependencies>
 		<dependency>
