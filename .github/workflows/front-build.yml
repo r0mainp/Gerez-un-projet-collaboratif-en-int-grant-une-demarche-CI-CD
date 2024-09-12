@@ -1,4 +1,4 @@
-name: FrontEnd Tests Analysis
+name: FrontEnd Tests and Analysis
 on:
   push:
     branches:
