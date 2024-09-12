@@ -6,8 +6,8 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
-  sonarcloudBack:
-    name: SonarCloud Scan Back
+  backend_tests_analysis:
+    name: Backend build and tests
     runs-on: ubuntu-latest
     defaults:
       run:
