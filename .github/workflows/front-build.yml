@@ -52,6 +52,7 @@ jobs:
     needs: frontend_tests_analysis
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Login to DockerHub
         uses: docker/login-action@v3
         with:
@@ -62,5 +63,7 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v6
         with:
+          context: ./front
+          file: ./front/Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/clockbox:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/bobapp_front:latest
