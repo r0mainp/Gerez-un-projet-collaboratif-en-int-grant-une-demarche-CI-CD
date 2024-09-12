@@ -49,6 +49,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
   docker_build_and_push:
+    name: Frontend Docker Build and Push
     needs: frontend_tests_analysis
     runs-on: ubuntu-latest
     steps:
